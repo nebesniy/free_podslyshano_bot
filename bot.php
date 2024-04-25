@@ -1,8 +1,8 @@
 <?php
 
 // Получение данных из переменных окружения
-$token = getenv('TELEGRAM_BOT_TOKEN');
-$destination = getenv('DESTINATION_CHANNEL'); // Имя канала для пересылки с собачкой в начале, например @channel. У бота должен быть доступ к каналу с правом публикации сообщений и медиафайлов.
+$token = "TELEGRAM_BOT_TOKEN";
+$destination = "DESTINATION_CHANNEL"; // Имя канала для пересылки с собачкой в начале, например @channel. У бота должен быть доступ к каналу с правом публикации сообщений и медиафайлов.
 
 // Проверка наличия необходимых данных
 if (empty($token) || empty($destination)) {
